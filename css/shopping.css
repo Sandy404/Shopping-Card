@@ -1,0 +1,142 @@
+:root{
+    --light-font:#eee;
+    --botton:rgb(57, 111, 212);
+
+  }
+  *{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+  }
+  
+  ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  button{
+    border:none;
+  }
+  .header{
+   padding: 20px 40px;
+   background-color: rgb(54, 52, 52);
+   color:var(--light-font);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+  }
+  .header h2{
+    font-weight: 300;
+  }
+  .header i{
+    font-size: 20px;
+  }
+  .container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width: 768px){
+    .container{
+      width:750px;
+    }
+  }
+  @media (min-width: 992px){
+    .container{
+      width:970px;
+    }
+  }
+  @media (min-width: 1200px){
+    .container{
+      width:1170px;
+    }
+  }
+  .store {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 80px;
+    grid-row-gap: 50px;
+    margin-bottom: 100px;
+  }
+  .store img{
+    width:100%;
+    height: 300px;
+  }
+  .box {
+    border:0.5px rgb(179, 173, 173) solid;
+  }
+  .box h3 , .box h4 , .box button{
+    margin-left:30px;
+    font-weight: 400;
+  }
+  .box h3{
+    margin-top:10px;
+  }
+  .box h4{
+    margin-top:25px;
+    margin-bottom:15px;
+  }
+  .box button{
+    padding:15px 10px;
+    background-color: var(--botton);
+    color:var(--light-font);
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  .list-titles{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 35% 20% 20% 25%;
+    padding-bottom: 35px;
+    border-bottom:0.5px rgb(179, 173, 173) solid;
+  }
+  .list-titles li:first-child{
+    padding-left: 30px;
+  }
+ .selected{
+  display: grid;
+  grid-template-columns:  12% 23% 20% 20% 10% 15%;
+  font-size: 16px;
+ }
+ .selected li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ }
+ .selected img{
+  width:90%;
+  height:100%;
+  padding-left:10%;
+ }
+ .item {
+ justify-content:start;
+ }
+ .selected input[type="number"]{
+  width: 60%;
+ }
+ .total{
+  display: grid;
+  grid-template-columns: 12% 23% 20% 20% 10% 15%;
+  font-weight: bold;
+ }
+
+ 
+
+
+
+
+  
+  
